@@ -1,0 +1,48 @@
+.esasyDiv{
+  background: #DCFCE7;
+  width: 100%;
+  height: 100vh;
+  /* padding: 5px; */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.esasyDiv>.childDiv{
+  background-color: #F0FDF4;
+  display:inline-flex;
+  flex-wrap:wrap; 
+  align-content: space-around;
+  align-items: center;
+  border-radius: 22px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  width: 60%;
+  min-width: 680px;
+  height: 65vh;
+ 
+}
+.esasyDiv .text{
+  color: #22C55E;
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.esasyDiv > div{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+.esasyDiv .button{
+  background-color: #22C55E;
+  color: #F0FDF4;
+  border-radius: 12px;
+  width: 400px;
+  height: 80px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border: none; 
+  font-size: 42px;
+  margin: 0;
+  margin-bottom: 20px;
+  
+}

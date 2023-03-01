@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* Project's standard styles */
+
+.font-roboto {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.font-eczar {
+	font-family: 'Eczar', serif;
+}
+
+.sb-1 {
+	font-weight: 400 !important;
+	font-size: 16px;
+}
+
+.sb-2 {
+	font-weight: 600 !important;
+	font-size: 14px;
+}
+
+.caption {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.logo-text {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 16px;
+	letter-spacing: 1.25px;
+}
+
+/* Own select option such like as MDB select */
+
+.select {
+	position: relative;
+	width: 200px;
+	border-radius: 3px;
+}
+
+.select-text {
+	position: relative;
+	background-color: transparent;
+	width: 100%;
+	padding: 8px 0;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.select-text:focus {
+	outline: none;
+	border-radius: 3px;
+	border: 2px solid #1266f1;
+}
+
+.select .select-text {
+	appearance: none;
+	-webkit-appearance:none
+}
+
+.select:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 8px 0px;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.12);
+	pointer-events: none;
+}
+
+.select-label {
+	color: rgba(0,0,0,.6);
+	font-weight: normal;
+	font-size: 16px;
+	position: absolute;
+	pointer-events: none;
+	left: 11px !important;
+	top: 6px;
+	transition: 0.2s ease all;
+}
+
+.select-text:focus ~ .select-label {
+	color: #2F80ED;
+	top: -9px;
+	left: 10px !important;
+	background-color: #fff;
+	border-radius: 30%;
+	padding: 0 3px !important;
+	transition: 0.2s ease all;
+	font-size: 12px;
+}
+
+.focused-input {
+	position: absolute;
+	color: #2F80ED !important;
+	top: -9px !important;
+	left: 10px !important;
+	background-color: #fff !important;
+	border-radius: 30% !important;
+	padding: 0 3px !important;
+	font-size: 12px;
+	z-index: 9999999 !important;
+	max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	margin-bottom: 0;
+}
+
+.select-text:valid ~ .select-label {
+	color: rgba(0,0,0,.6) !important;
+	top: -9px;
+	left: 10px !important;
+	background-color: #fff;
+	border-radius: 30%;
+	padding: 0 3px !important;
+	transition: 0.2s ease all;
+	font-size: 12px;
+}
+
+.select-highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* MC Calendar  */
+
+.mc-display__data {
+  background-color: #2979ff;
+}
+.mc-display__day {
+  background-color: #2979ff;
+}
+.mc-table__weekday {
+  color: #2979ff !important;
+}
+.mc-date--picked {
+  background-color: #2979ff !important;
+}
+.mc-btn {
+  color: #2979ff !important;
+}
+.mc-btn--danger {
+  color: red !important;
+}
+
+button[type="button"].btn-close {
+	background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+}

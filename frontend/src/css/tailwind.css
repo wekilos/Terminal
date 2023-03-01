@@ -1,0 +1,89 @@
+@tailwind base;
+
+@layer base {
+	h1 {
+		@apply text-[96px];
+	}
+
+	h2 {
+		@apply text-[60px];
+	}
+
+	h3 {
+		@apply text-[48px];
+	}
+
+	h4 {
+		@apply text-[34px];
+	}
+
+	h5 {
+		@apply text-[24px];
+	}
+
+	h6 {
+		@apply text-[20px];
+	}
+}
+
+@tailwind components;
+
+@layer components {
+
+	/* your custom components goes here */
+	.nav-item-active {
+		@apply text-primary-light border-b-4 border-primary-light;
+	}
+
+	.flex-start-center {
+		@apply flex justify-start items-center;
+	}
+
+	.flex-between-center {
+		@apply flex justify-between items-center;
+	}
+
+	.flex-around-center {
+		@apply flex justify-around items-center;
+	}
+
+	.vl-btn {
+		@apply bg-primary-light text-white flex-between-center gap-x-3 hover:text-white hover:bg-primary-dark
+	}
+
+	.vl-btn-danger {
+		@apply bg-red-600 text-white flex-between-center gap-x-3 hover:text-white hover:bg-red-700
+	}
+
+	.y-center {
+		@apply m-0 absolute top-1/2;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.x-center {
+		@apply m-0 absolute left-1/2;
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	.absolute-center {
+		@apply m-0 absolute top-1/2 left-1/2;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+}
+
+@tailwind utilities;
+
+@layer utilities {
+
+	.scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll-hide {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
