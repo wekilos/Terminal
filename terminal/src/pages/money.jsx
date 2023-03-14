@@ -26,19 +26,20 @@ const Money = () => {
             <div className="childDiv">
                 <h2 className="text">
                     Haýyr-sahawatyňyz <br />
-                    üçin mukdar
+                    {/* üçin mukdar */}
+                    kabul edilýar
                 </h2>
                 <div>
                     <div>
-                        <input
+                        {/* <input
                             className="input"
                             value={money}
                             onChange={(e) => setMoney(e.target.value)}
-                        />
+                        /> */}
                     </div>
                     <div>
                         <button onClick={() => toleg()} className="button">
-                            Sadaka ber
+                            Töleg
                         </button>
                     </div>
                 </div>
