@@ -25,7 +25,7 @@ const Money = () => {
         <div className="maneyDiv">
             <div className="childDiv">
                 <h2 className="text">
-                    Haýyr-sahawatyňyz <br />
+                    Haýyr-sahabatyňyz <br />
                     {/* üçin mukdar */}
                     kabul edilýar
                 </h2>
@@ -39,7 +39,7 @@ const Money = () => {
                     </div>
                     <div>
                         <button onClick={() => toleg()} className="button">
-                            Töleg
+                            Tassykla
                         </button>
                     </div>
                 </div>
